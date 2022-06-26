@@ -14,7 +14,6 @@ import { getAllusers } from "../demoAPIs/users";
 
 export default {
   created() {
-    console.log("hello");
     this.getAllRegisteredUsers();
   },
   data() {
@@ -25,9 +24,7 @@ export default {
   methods: {
     async getAllRegisteredUsers() {
       const response = await getAllusers();
-      console.log(response.data);
       this.allusers = response.data.data;
-      console.log(this.allusers);
     },
   },
 };
