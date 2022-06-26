@@ -1,11 +1,19 @@
 import axios from "axios";
 export const registerUser = async (dummyData) => {
-  const res = await axios("http://localhost:3001/users/adduser", {
-    method: "POST",
+  console.log(JSON.stringify(dummyData));
+  const res = await axios.post(
+    "http://localhost:3001/users/adduser/",
+    dummyData
+  );
+  return res;
+};
+
+export const getAllusers = async () => {
+  const res = await axios("http://localhost:3001/users/all/", {
+    method: "GET",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(dummyData),
   });
-  return res
+  return res;
 };

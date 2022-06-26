@@ -1,19 +1,13 @@
 <template>
   <div id="app">
-    <RegisterUser />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import RegisterUser from './components/RegisterUser.vue'
-
 export default {
-  name: 'App',
-  components: {
-    RegisterUser
-}
-}
+  name: "App",
+};
 </script>
 
-<style>
-</style>
+<style></style>
