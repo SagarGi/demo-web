@@ -1,24 +1,17 @@
 # demo-web
 
-## Project setup
+## Setup Locally
+1. Clone the project
+ ```bash
+     git clone https://github.com/SagarGi/demo-web.git
+ ```
+2. Make `.env` file to the root directory of the `demo-web` project and copy everything from `.env.example` to `.env`
+3. Install all the packages
+```bash
+    npm install
 ```
-npm install
+4. Start the `front-end` locally
+```bash
+    npm start
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+5. visit `http://localhost:8080/ `
