@@ -5,6 +5,10 @@
  ```bash
      git clone https://github.com/SagarGi/demo-web.git
  ```
+2. Go to the project directory
+  ```bash
+    cd demo-web
+  ```
 2. Make `.env` file to the root directory of the `demo-web` project and copy everything from `.env.example` to `.env`
 3. Install all the packages
 ```bash
